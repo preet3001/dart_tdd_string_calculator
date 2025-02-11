@@ -14,4 +14,10 @@ void main() {
   test('should also be handled as separator', () {
     expect(add('1/n2,3'), 6);
   });
+  test('should also be handled as separator', () {
+    expect(add('1/n2,3'), 6);
+  });
+  test('should also handle custom delimiters', () {
+    expect(add('//;\n1;2'), 3);
+  });
 }
