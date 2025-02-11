@@ -20,4 +20,7 @@ void main() {
   test('should also handle custom delimiters', () {
     expect(add('//;\n1;2'), 3);
   });
+  test('should throw exception in case of negative numbers', () {
+    expect(() => add('1,-2,3,-4'), throwsA(isA<Exception>()));
+  });
 }
