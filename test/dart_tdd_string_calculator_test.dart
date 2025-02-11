@@ -8,4 +8,7 @@ void main() {
   test('should get 1 in case string is 1', () {
     expect(add('1'), 1);
   });
+  test('should get 6 in case string is 1,5', () {
+    expect(add('1,5'), 6);
+  });
 }
