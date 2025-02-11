@@ -2,7 +2,7 @@ int add(String number) {
   if (number.isEmpty) {
     return 0;
   }
-  String seprator = ',|/n';
+  String seprator = ',|\n';
   if (number.startsWith('//')) {
     final parts = number.split('\n');
     seprator = parts.first.substring(2);
